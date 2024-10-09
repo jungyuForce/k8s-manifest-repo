@@ -9,4 +9,4 @@ metadata:
     env: dev
 spec:
   selector:
-    app: pet-connect-main-fargate
+    app: pet-connect-main

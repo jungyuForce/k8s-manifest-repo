@@ -8,8 +8,8 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: pet-connect-main-fargate
+      app: pet-connect-main
   template:
     metadata:
       labels:
-        app: pet-connect-main-fargate
+        app: pet-connect-main
