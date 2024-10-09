@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pet-connect-main-deployment
+  namespace: default
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: pet-connect-main
+  template:
+    metadata:
+      labels:
+        app: pet-connect-main
+    spec:
+      containers:
+      - name: pet-connect-main
+        image: 975050133565.dkr.ecr.ap-northeast-2.amazonaws.com/pet-connect-main
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 8081

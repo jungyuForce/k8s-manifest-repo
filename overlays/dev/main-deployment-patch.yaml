@@ -1,0 +1,15 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: pet-main
+  namespace: default
+  labels:
+    env: dev
+spec:
+  selector:
+    matchLabels:
+      app: pet-main-fargate
+  template:
+    metadata:
+      labels:
+        app: pet-main-fargate
