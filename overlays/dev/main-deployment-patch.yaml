@@ -1,15 +1,15 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: pet-main
+  name: pet-connect-main-deployment
   namespace: default
   labels:
     env: dev
 spec:
   selector:
     matchLabels:
-      app: pet-main-fargate
+      app: pet-connect-main-fargate
   template:
     metadata:
       labels:
-        app: pet-main-fargate
+        app: pet-connect-main-fargate

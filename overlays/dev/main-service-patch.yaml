@@ -1,11 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: pet-main
+  name: pet-connect-main-service
+  namespace: default
   annotations:
     alb.ingress.kubernetes.io/healthcheck-path: "/"
   labels:
     env: dev
 spec:
   selector:
-    app: pet-main-fargate
+    app: pet-connect-main-fargate
