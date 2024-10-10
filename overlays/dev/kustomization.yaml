@@ -1,22 +1,12 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 images:
-<<<<<<< HEAD
   - name: 975050133565.dkr.ecr.ap-northeast-2.amazonaws.com/pet-connect-main
     newName: 975050133565.dkr.ecr.ap-northeast-2.amazonaws.com/pet-connect-main
     newTag: "PLACEHOLDER"  # 여기에 GitHub Actions에서 자동으로 새로운 태그가 설정됩니다.
-=======
-- name: /
-  newName: /
-- name: /pet-connect-main
-  newName: /pet-connect-main
-  newTag: latest
-- name: 975050133565.dkr.ecr.ap-northeast-2.amazonaws.com/pet-connect-main
-  newName: 975050133565.dkr.ecr.ap-northeast-2.amazonaws.com/pet-connect-main
-  newTag: 8e064a5a
->>>>>>> 05d1c0852ac4a2a6d67b52be0c25b2ab726f00f0
 resources:
   - ../../base
 patchesStrategicMerge:
   - main-deployment-patch.yaml
   - main-service-patch.yaml
+
