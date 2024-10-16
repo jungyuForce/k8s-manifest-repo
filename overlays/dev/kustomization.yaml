@@ -3,7 +3,7 @@ kind: Kustomization
 images:
 - name: 975050133565.dkr.ecr.ap-northeast-2.amazonaws.com/pet-connect-main
   newName: 975050133565.dkr.ecr.ap-northeast-2.amazonaws.com/pet-connect-main
-  newTag: c1e0b1cc
+  newTag: 707bda5f
 resources:
 - ../../base
 patchesStrategicMerge:
